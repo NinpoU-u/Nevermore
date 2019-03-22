@@ -1,5 +1,6 @@
 package com.mygdx.game.states;
 
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.mygdx.game.Nevermore;
@@ -18,12 +19,15 @@ public class MenuState extends State{
 
     @Override
     protected void handleInput() {
+        if (Gdx.input.justTouched()){
+            gsm.set(new PlayState(gsm));
+        }
 
     }
 
     @Override
     public void update(float db) {
-
+        handleInput();
     }
 
     @Override

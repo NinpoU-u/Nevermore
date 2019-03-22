@@ -12,13 +12,14 @@ public class Nevermore extends ApplicationAdapter {
 	public static final int WIDTH = 480;
 	public static final int HEIGHT = 800;
 
-
+	//Заголовок игры
 	public static final String TITLE = "NeverMore";
-
+	//Создаем инстансы классов
 	private GameStateManager gsm;
 	private SpriteBatch batch;
 	Texture img;
 
+	//Инициализируем наши обьекты
 	@Override
 	public void create () {
 		batch = new SpriteBatch();

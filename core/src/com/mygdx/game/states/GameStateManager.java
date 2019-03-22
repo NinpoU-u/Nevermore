@@ -18,7 +18,7 @@ public class GameStateManager {
     public void push(State state){
          states.push(state);
     }
-    //в методе поп мы освобождаем ресурсы
+    //в методе поп освобождаем ресурсы
     public void pop(){
         states.pop().dispose();
     }
