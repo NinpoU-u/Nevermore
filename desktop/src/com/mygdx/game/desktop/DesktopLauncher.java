@@ -9,6 +9,7 @@ public class DesktopLauncher {
 		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
 		config.width = Nevermore.WIDTH;
 		config.height = Nevermore.HEIGHT;
+		config.title = Nevermore.TITLE;
 		new LwjglApplication(new Nevermore(), config);
 	}
 }
