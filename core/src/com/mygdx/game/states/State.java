@@ -5,6 +5,8 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Vector3;
 
 public abstract class State {
+    //Мы храним в объекте State ссылку на GameStateManager,
+    // чтобы с помощью менеджера поменять текущее состояние на другое, так же как мы делаем в MenuState для перехода в PlayState﻿
 
     protected OrthographicCamera camera;
     protected Vector3 mouse;
