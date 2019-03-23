@@ -4,6 +4,7 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.math.Vector3;
 
 public class Bird {
+    public static final int  MOVEMENT = 100;
     public static final int GRAVITY = -15;
     private Vector3 position;
     private Vector3 velosity;
@@ -31,7 +32,7 @@ public class Bird {
         // затем умножаем вектор сокрости на скаляр промежутка времени дельта тайм(время)
         velosity.scl(dt);
         //затем добавляем новое значение координаты y к положению птици на экране и повторяем метод скэил для вектора скорости велосити
-        position.add(0, velosity.y,0);
+        position.add(MOVEMENT*dt, velosity.y,0);
 
         if (position.y < 0)
             position.y = 0;
